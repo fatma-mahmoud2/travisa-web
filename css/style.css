@@ -1,0 +1,285 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+   height: 9500px;
+   font-family:Arial, Helvetica, sans-serif;
+   text-transform: capitalize;
+   overflow-x: hidden;
+} 
+a{text-decoration: none;}
+.navbar{opacity: .9;}
+.navbar-toggler ,.accordion-button ,.accordion-body ,.oo ,input{
+    color: #003A66 !important;
+} 
+input{
+    border:solid 1px  #003A66 !important;
+}
+.btn:hover {
+    background-color: #003A66 !important;
+    border: #003A66 !important;
+}
+.carousel-item img{
+    height: 90vh !important;
+}
+.carousel-inner{
+    margin-top: 80px !important;
+}
+.carousel-caption{
+    background-color: rgb(28, 27, 27,.6);
+    border-radius: 10px;
+    padding: 60px;
+}
+.icon-link{
+    position: fixed;
+    top: 30%;
+    right: 2%;
+    z-index: 55;
+}
+.icon-link a:hover{
+    background-color: darkred !important;
+}
+.icon-link a i {
+    line-height: 50px;
+    padding-left: 10px;
+    
+}
+@media (max-width: 768px) {
+    .icon-link {
+        top: auto; 
+        bottom: 10%; 
+        right: 5%; 
+        flex-direction: row; 
+        gap: 15px; 
+    }
+
+    .icon-link a {
+        width: 40px; 
+        height: 40px;
+    }
+
+    .icon-link a i {
+        font-size: 30px !important;
+        padding-right: 5px !important;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column; 
+       max-width: 90% !important ; 
+        min-height: auto; 
+        overflow: hidden;
+        margin-left: 20px;
+      }
+      .card img {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        clip-path: none !important; 
+        border-radius: 0; 
+      }
+      .card-body {
+        padding: 20px; 
+        text-align: center; 
+      }
+      .card .row {
+        flex-wrap: wrap; 
+      }
+      .card .col-md-8,
+      .card .col-md-4 {
+        width: 100%; 
+      }
+      .btn-button {
+        display: flex;
+        justify-content:space-around; 
+        flex-wrap: wrap; 
+        gap: 10px; 
+      }
+      .year{
+          margin-left: -170px;
+      }
+      .opening-time{
+          width: 90% !important;
+      }
+      .bg-white {
+        margin-bottom: 20px; 
+      }
+}
+.pp p , .catog ,p,h5 ,span, .fas ,.card-text {
+    color: #003A66;
+    
+}
+.no-hover:hover {
+    background-color: transparent !important; 
+    color: inherit !important; 
+    box-shadow: 5px 5px 10px gray  !important; 
+}
+.nav-link .dropdown-menu {
+    top :60px;
+    left:0px;
+    z-index: 10000;
+}
+.modal-header ,.btn , .p-ne ,.translate{
+    background-color: #003A66;
+}
+.imm{
+    background-image: url(../imge/training-4.jpg);
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.cont-img{
+    width: 20%;
+    height: 600px;
+}
+@media (max-width: 576px) { 
+    .bg-white {
+      margin-bottom: 20px; 
+    }
+  }
+.over::after{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 58, 102);
+    opacity: 1;
+    transition: 1s
+}
+.over:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    transition: 1s;
+}
+.over::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 58, 102);
+    opacity: 1;
+    transition: 1s;
+}
+.over:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    transition: 1s;
+}
+.tran{
+    background-image:url(../imge/training-4.jpg);
+    background-attachment:fixed ;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+.team-info{
+    background-image: linear-gradient(to bottom , rgba(70, 69, 69, 0.9),rgb(128, 128, 128,.6));
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.ronded-img{
+    margin-top:170px;
+}
+.team-info:hover{
+    background-image:linear-gradient(to bottom,rgb(0, 58, 102,.9) ,rgb(0, 58, 102,.6)) ;
+}
+.our-team:hover{
+    transform: scale(.9,.9);   
+}
+.card-new{
+    box-shadow:  2px 2px 9px 9px  rgb(0, 58, 102,.4);
+    border-radius: 10px;
+}
+.card-new:hover img{
+    transform: scale(1.04,1.04);
+    transition: .5s;
+}
+.line-wh{
+    width: 70px; 
+    height: 5px; 
+    transition: 1s;
+}
+.card-new:hover .line-wh {
+    width: 130px;
+    transition: 1s;
+}
+.btn-button{
+    margin-top: 60px;
+}
+.col:hover{
+    background-color: rgb(97, 97, 249);
+    color:white;
+}
+.col2:hover{
+    background-color: darkred;
+    color: white;
+}
+.col3:hover{
+    background-color: rgb(198, 145, 11);
+    color: white;
+}
+.card1 ,.card3{
+    background-image: linear-gradient(to right , rgb(97, 97, 249,.1),rgb(250, 245, 245,.2));
+}
+.card2{
+    background-image: linear-gradient(to left,rgb(198, 145, 11,.1),rgb(250, 245, 245,.2) );
+}
+.card3{
+    background-image: linear-gradient(to right,rgb(139, 0, 0,.1),rgb(250, 245, 245,.2) );
+}
+.linkk a:hover {
+    color: rgb(172, 27, 2,.7) !important; 
+}
+.linkk i:hover{color: rgb(172, 27, 2,.7) !important;}
+.nav-link:hover{
+    color: darkred !important;
+}
+.nav-link:hover .h-home {
+    transform: scale(1.2); 
+    color: rgb(0, 58, 102,.7) 
+  }
+.h-home {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+.home{
+    box-shadow: 1px 1px 1px 1px  rgb(0, 58, 102,.3);
+    margin-top: 12px;
+    padding:20px 5px;
+    text-align: center;
+    border: 2px solid rgb(0, 58, 102,.4); 
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    line-height: 1px;
+}
+.home:hover {
+    transform: scale(1.1);
+}
+.form-check {
+    display: flex;
+    align-items: center;
+  }
+  .end:hover p{
+    color: darkred !important;
+    transition: color 0.3s ease; 
+}
+
+  
+
+
+  
+
+
+
